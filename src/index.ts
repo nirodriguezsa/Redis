@@ -2,6 +2,7 @@ import express, { response } from 'express';
 import dotenv from 'dotenv';
 import axios from 'axios';
 import { createClient } from 'redis';
+import { welcome } from '../welcome';
 dotenv.config();
 
 const app = express();
@@ -37,5 +38,6 @@ app.get('/get-product/:id', async (req, res) => {
 
 
 app.listen(port, () => {
+  welcome();
   console.log(`Server running in port ${port} my friend!`);
 })
