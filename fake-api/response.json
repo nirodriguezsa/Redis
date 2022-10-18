@@ -1,0 +1,72 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "product": "Chocorramo",
+      "price": 3200,
+      "quantity": 54
+    },
+    {
+      "id": 2,
+      "product": "Papas Fritas Limon",
+      "price": 2800,
+      "quantity": 105
+    },
+    {
+      "id": 3,
+      "product": "Lecherita pequeña",
+      "price": 1850,
+      "quantity": 12
+    },
+    {
+      "id": 4,
+      "product": "Nucita",
+      "price": 700,
+      "quantity": 346
+    },
+    {
+      "id": 6,
+      "product": "Cola & Pola 350 ml",
+      "price": 3200,
+      "quantity": 561
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "purchaseOrderId": 1,
+      "products": {
+        "id": 6,
+        "product": "Cola & Pola 350 ml",
+        "price": 3200,
+        "quantity": 561
+      },
+      "total": 687000,
+      "auditor": "Nicolas Rodriguez"
+    },
+    {
+      "purchaseOrderId": 2,
+      "id": 4,
+      "products": [
+        {
+          "product": "Nucita",
+          "price": 700,
+          "quantity": 346
+        },
+        {
+          "id": 6,
+          "product": "Cola & Pola 350 ml",
+          "price": 3200,
+          "quantity": 561
+        }
+      ],
+      "total": 687000,
+      "auditor": "Nicolas Rodriguez"
+    },
+    {
+      "purchaseOrderId": 1,
+      "products": [],
+      "total": 687000,
+      "auditor": "Tomas del Mio"
+    }
+  ]
+}
